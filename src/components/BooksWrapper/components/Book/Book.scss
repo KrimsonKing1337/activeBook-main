@@ -1,0 +1,11 @@
+.Book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Name {
+  font-size: clamp(32px, 4.44vmin, 64px);
+}

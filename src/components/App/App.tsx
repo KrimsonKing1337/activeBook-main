@@ -1,15 +1,17 @@
-import { Wrapper, Counter } from 'components';
+import { BooksWrapper, Title } from 'components';
+
+import 'styles/styles.scss';
+
+import * as styles from './App.scss';
 
 export const App = () => {
   return (
-    <div>
-      <Wrapper>
-        <h1>
-          Counter
-        </h1>
+    <div className={styles.Wrapper}>
+      <Title>
+        ActiveBook
+      </Title>
 
-        <Counter />
-      </Wrapper>
+      <BooksWrapper />
     </div>
   );
 };
