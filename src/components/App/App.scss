@@ -3,6 +3,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 16px;
   margin-top: 25px;
+}
+
+.Desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  font-size: clamp(20px, 2.9vmin, 40px);
+
+  p {
+    margin: 0;
+
+    &:nth-last-child(1) {
+      font-style: italic;
+    }
+  }
 }
