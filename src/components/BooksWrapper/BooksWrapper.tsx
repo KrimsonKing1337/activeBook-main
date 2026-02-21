@@ -1,5 +1,5 @@
-import FirstBookCoverImage from 'assets/1.png';
-import SecondBookCoverImage from 'assets/2.png';
+import FirstBookCoverImage from 'assets/1.jpg';
+import SecondBookCoverImage from 'assets/2.jpg';
 
 import { Book } from './components';
 
