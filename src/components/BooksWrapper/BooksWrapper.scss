@@ -1,6 +1,7 @@
 .BooksWrapper {
   display: grid;
-  grid-template-columns: repeat(2, max(500px));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   justify-content: center;
   gap: 20px;
+  padding: 50px;
 }
