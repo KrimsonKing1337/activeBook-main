@@ -3,10 +3,11 @@ import * as styles from './Book.scss';
 export type BookProps = {
   imgSrc: string;
   name: string;
+  desc: string;
   link: string;
 };
 
-export const Book = ({ imgSrc, name, link }: BookProps) => {
+export const Book = ({ imgSrc, name, desc, link }: BookProps) => {
   const clickHandler = () => {
     window.open(link, '_blank');
   };
@@ -17,6 +18,10 @@ export const Book = ({ imgSrc, name, link }: BookProps) => {
 
       <div className={styles.Name}>
         {name}
+      </div>
+
+      <div className={styles.Desc}>
+        {desc}
       </div>
     </div>
   );

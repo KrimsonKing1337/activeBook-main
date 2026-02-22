@@ -30,3 +30,17 @@
     }
   }
 }
+
+.Footer {
+  font-size: 0.85rem;
+  color: rgba(#000, 0.5);
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 80px;
+  padding: 32px 16px;
+  border-top: 1px solid rgba(#000, 0.08);
+
+  p {
+    margin: 4px 0;
+  }
+}

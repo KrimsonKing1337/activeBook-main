@@ -13,9 +13,13 @@ export const App = () => {
 
       <div className={styles.Desc}>
         <p>
-          ActiveBooks &mdash; книги в&nbsp;формате «живая книга»,
+          ActiveBooks &mdash; новый формат интерактивных цифровых книг,
           с&nbsp;различными визуальными эффектами,
           звуками, музыкой, вибрацией и&nbsp;вспышкой.
+        </p>
+
+        <p>
+          Демонстрация технологии на&nbsp;примере двух произведений.
         </p>
 
         <p>
@@ -28,6 +32,11 @@ export const App = () => {
       </div>
 
       <BooksWrapper />
+
+      <div className={styles.Footer}>
+        <p>Демонстрационный прототип.</p>
+        <p>ActiveBook engine © Олег Шилов</p>
+      </div>
     </div>
   );
 };
