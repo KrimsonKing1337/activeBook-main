@@ -1,11 +1,9 @@
-.Book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.BookWrapper {
+  max-width: 480px;
+  padding: 10px;
+  margin-inline: auto;
+
   border-radius: 12px;
-  padding: 5px;
-  margin: 10px;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
@@ -14,6 +12,14 @@
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.15);
   }
+}
+
+.Book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 .Name {

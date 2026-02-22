@@ -13,15 +13,17 @@ export const Book = ({ imgSrc, name, desc, link }: BookProps) => {
   };
 
   return (
-    <div className={styles.Book} onClick={clickHandler}>
-      <img src={imgSrc} alt="" />
+    <div className={styles.BookWrapper}>
+      <div className={styles.Book} onClick={clickHandler}>
+        <img src={imgSrc} alt="" />
 
-      <div className={styles.Name}>
-        {name}
-      </div>
+        <div className={styles.Name}>
+          {name}
+        </div>
 
-      <div className={styles.Desc}>
-        {desc}
+        <div className={styles.Desc}>
+          {desc}
+        </div>
       </div>
     </div>
   );
