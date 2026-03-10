@@ -26,6 +26,7 @@
     &:nth-last-child(1) {
       font-style: italic;
       font-size: clamp(16px, 2.15vmin, 32px);
+      color: red;
       opacity: 0.6;
     }
   }
