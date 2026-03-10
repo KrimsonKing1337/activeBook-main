@@ -1,9 +1,9 @@
 declare global {
   interface Window {
-    Telegram: any;
-    TelegramWebview: any;
-    TelegramWebviewProxy: any;
-    TelegramWebviewProxyProto: any;
+    Telegram: unknown;
+    TelegramWebview: unknown;
+    TelegramWebviewProxy: unknown;
+    TelegramWebviewProxyProto: unknown;
   }
 }
 
