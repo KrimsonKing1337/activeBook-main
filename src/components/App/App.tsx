@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 
 import { BooksWrapper, Title } from 'components';
 
+import { isInTelegram } from 'utils';
+
 import 'styles/styles.scss';
 
-import * as styles from './App.scss';
 import { WrongUserAgent } from '../WrongUserAgent';
+
+import * as styles from './App.scss';
 
 export const App = () => {
   const [isInApp, setIsInApp] = useState(false);
@@ -13,10 +16,12 @@ export const App = () => {
   useEffect(() => {
     const { userAgent } = navigator;
 
-    const isInApp =
-      /Telegram|FBAN|FBAV|Instagram|WhatsApp|Line|MicroMessenger/i.test(userAgent);
+    const isMessengerUserAgent =
+      /Telegram|FBAN|FBAV|Facebook|Instagram|WhatsApp|Viber|Line|MicroMessenger|QQBrowser/i.test(userAgent);
 
-    setIsInApp(isInApp);
+    const isInTelegramWebview = isInTelegram();
+
+    setIsInApp(isMessengerUserAgent || isInTelegramWebview);
   }, []);
 
   return (
@@ -53,8 +58,13 @@ export const App = () => {
           <BooksWrapper />
 
           <div className={styles.Footer}>
-            <p>Демонстрационный прототип.</p>
-            <p>ActiveBook engine © Олег Шилов</p>
+            <p>
+              Демонстрационный прототип.
+            </p>
+
+            <p>
+              ActiveBook engine © Олег Шилов
+            </p>
           </div>
         </>
       )}
