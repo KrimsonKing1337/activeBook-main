@@ -7,6 +7,8 @@ export const WrongUserAgent = () => {
 
   const buttonClickHandler = () => {
     setIsCopied(true);
+
+    navigator.clipboard.writeText('https://active-books.ru');
   };
 
   const buttonLabel = isCopied ? 'Скопировано' : 'Скопировать ссылку';
